@@ -9,10 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 </head>
-<body>
+<body style="margin-top:70px;">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="/">Easy Service Group</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,17 +25,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/cantieri.html">Cantieri</a>
             </li>
-            <!--<li class="nav-item dropdown">-->
-                <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">-->
-                    <!--Dropdown-->
-                <!--</a>-->
-                <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                    <!--<a class="dropdown-item" href="#">Action</a>-->
-                    <!--<a class="dropdown-item" href="#">Another action</a>-->
-                    <!--<div class="dropdown-divider"></div>-->
-                    <!--<a class="dropdown-item" href="#">Something else here</a>-->
-                <!--</div>-->
-            <!--</li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="/preventivi_admin.html">Preventivi</a>
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Ricerca" aria-label="Search">
@@ -44,10 +36,27 @@
     </div>
 </nav>
 
-<div class="container">
-    <h1>Homepage</h1>
-
-</div>
+<main role="main" class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Easy Service Group</h1>
+        <p class="lead">Sistema di gestione preventivi, contratti, pagamenti, fatturazioni e avanzamento lavori.</p>
+        <hr class="my-4">
+        <p>
+            Ci sono
+            <strong>3</strong> <a href="cantieri.html">cantieri attivi</a>,
+            <strong>2</strong> <a href="preventivi_admin.html">preventivi inviati</a> e
+            <strong>1</strong> <a href="preventivi_admin.html">preventivo accettato</a>.
+        </p>
+        <p>
+            La fattura <a href="#">1234/2017</a> intestata a <a href="/cliente_overview.html">Maria Teresa Ferrari</a>
+            risulta inevasa da 7 giorni, occorre <a href="cantieri.html">chiudere il cantiere</a>.
+        </p>
+        <p>
+            Il preventivo <a href="preventivi_admin.html">1234/2017</a> intestato a <a href="/cliente_overview.html">Mario Rossi</a>
+            è stato accettato, è possibile <a href="cantieri.html"><avviare></avviare> il cantiere</a>.
+        </p>
+    </div>
+</main>
 
 
 

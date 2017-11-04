@@ -22,10 +22,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="/index.html">Home</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/cantieri.html">Cantieri</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="/preventivi_admin.html">Preventivi</a>
             </li>
         </ul>
@@ -37,85 +37,78 @@
 </nav>
 
 <main role="main" class="container-fluid">
-    <h1>Gestione cantieri</h1>
+    <h1>Gestione preventivi</h1>
 
     <table class="table table-hover">
         <thead>
         <tr>
-            <th>Indirizzo e stato avanzamento</th>
+            <th>Indirizzo</th>
             <th>Architetto</th>
             <th>Cliente</th>
-            <th>Pagamenti</th>
+            <th>Valore totale</th>
+            <th>Stato</th>
+            <th>Azioni</th>
         </tr>
         </thead>
         <tbody>
-        <tr class="table-success">
+        <tr>
             <td>
-                <a href="/dettaglio_cantiere.html">Viale dei Giardini 32, Monopoli</a>
-                <br><em>cantiere attivo</em>
+                <a href="/dettaglio_preventivo.html">Viale dei Giardini 32, Monopoli</a>
             </td>
             <td><a href="/architetto_overview.html">Mario Rossi</a></td>
             <td><a href="/cliente_overview.html">Filippo Bianchi</a></td>
-            <td>
-                <div class="container row">
-                    <div class="col bg-success"><strong>3.000,00&thinsp;€</strong><br>1/4/2017</div>
-                    <div class="col bg-success"><strong>3.000,00&thinsp;€</strong><br>15/7/2017</div>
-                    <div class="col bg-warning"><strong>4.000,00&thinsp;€</strong><br>5/11/2017</div>
-                </div>
-            </td>
+            <td>3.000,00&thinsp;€</td>
+            <td>Bozza</td>
+            <td></td>
         </tr>
-        <tr class="table-warning">
+        <tr>
             <td>
-                <a href="/dettaglio_cantiere.html">Vicolo Corto 12, Monopoli</a>
-                <br><em>cantiere sospeso</em>
-            </td>
-            <td><a href="/architetto_overview.html">Giuseppe Verdi</a></td>
-            <td><a href="/cliente_overview.html">Maria Teresa Ferrari</a></td>
-            <td>
-                <div class="container row">
-                    <div class="col bg-success"><strong>300,00&thinsp;€</strong><br>1/9/2017</div>
-                    <div class="col bg-success"><strong>200,00&thinsp;€</strong><br>1/10/2017</div>
-                    <div class="col bg-danger"><strong>200,00&thinsp;€</strong><br>1/11/2017</div>
-                    <div class="col bg-info"><strong>200,00&thinsp;€</strong><br>1/12/2017</div>
-                    <div class="col bg-info"><strong>100,00&thinsp;€</strong><br>1/1/2018</div>
-                </div>
-            </td>
-        </tr>
-        <tr class="table-success">
-            <td>
-                <a href="/dettaglio_cantiere.html">Viale Traiano 98, Monopoli</a>
-                <br><em>cantiere attivo</em>
+                <a href="/dettaglio_preventivo.html">Viale Traiano 98, Monopoli</a>
             </td>
             <td><a href="/architetto_overview.html">Mario Rossi</a></td>
             <td><a href="/cliente_overview.html">Andrea Colombo</a></td>
+            <td>30.000,00&thinsp;€</td>
+            <td>Bozza</td>
+            <td></td>
+        </tr>
+        <tr class="table-info">
             <td>
-                <div class="container row">
-                    <div class="col bg-success"><strong>3.000,00&thinsp;€</strong><br>1/4/2017</div>
-                    <div class="col bg-success"><strong>3.000,00&thinsp;€</strong><br>1/7/2017</div>
-                    <div class="col bg-success"><strong>4.000,00&thinsp;€</strong><br>1/11/2017</div>
-                </div>
+                <a href="/dettaglio_preventivo.html">Vicolo Corto 12, Monopoli</a>
+            </td>
+            <td><a href="/architetto_overview.html">Giuseppe Verdi</a></td>
+            <td><a href="/cliente_overview.html">Maria Teresa Ferrari</a></td>
+            <td>7.000,00&thinsp;€</td>
+            <td>Sottoposto al cliente</td>
+            <td></td>
+        </tr>
+        <tr class="table-success">
+            <td>
+                <a href="/dettaglio_preventivo.html">Via Accademia 54, Monopoli</a>
+            </td>
+            <td><a href="/architetto_overview.html">Mario Rossi</a></td>
+            <td><a href="/cliente_overview.html">Andrea Colombo</a></td>
+            <td>30.000,00&thinsp;€</td>
+            <td>Approvato</td>
+            <td>
+                <a href="cantieri.html" class="btn btn-primary btn-sm">Avvia cantiere</a>
             </td>
         </tr>
-        <tr class="table-secondary">
+        <tr class="table-danger">
             <td>
-                <a href="/dettaglio_cantiere.html">Bastioni Gran Sasso 42, Monopoli</a>
-                <br><em>cantiere chiuso</em>
+                <a href="/dettaglio_preventivo.html">Bastioni Gran Sasso 42, Monopoli</a>
             </td>
             <td><a href="/architetto_overview.html">Giuseppe Verdi</a></td>
             <td><a href="/cliente_overview.html">Antonio Esposito</a></td>
-            <td>
-                <div class="container row">
-                    <div class="col bg-success"><strong>3.000,00&thinsp;€</strong><br>1/9/2017</div>
-                    <div class="col bg-success"><strong>6.000,00&thinsp;€</strong><br>1/10/2017</div>
-                    <div class="col bg-danger"><strong>1.000,00&thinsp;€</strong><br>1/11/2017</div>
-                </div>
-            </td>
+            <td>6.000,00&thinsp;€</td>
+            <td>Rifiutato</td>
+            <td></td>
         </tr>
         </tbody>
     </table>
 </main>
 
-
+<br><br><br><br><br>
+<small><a href="preventivi_architetto.html">Vista architetto</a></small>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
