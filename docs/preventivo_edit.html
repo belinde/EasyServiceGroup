@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <title>Easy Service Group</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+<body style="margin-top:70px;">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html">Easy Service Group</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cantieri.html">Cantieri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="preventivi_admin.html">Preventivi</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ricerca</button>
+        </form>
+    </div>
+</nav>
+
+<main role="main" class="container-fluid">
+    <h1>
+        Viale dei Giardini 32, Monopoli
+        <small class="text-muted">modifica preventivo</small>
+    </h1>
+
+    <form method="get" action="dettaglio_preventivo.html">
+        <div class="row mb-5">
+            <div class="col-sm-4">
+                <div class="card">
+                    <h4 class="card-header">
+                        Dati generali
+                    </h4>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="qqq" class="col-sm-2 col-form-label">Indirizzo</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="qqq"
+                                       value="Viale dei Giardini 32, Monopoli">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="qqqa" class="col-sm-2 col-form-label">Architetto</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="qqqa">
+                                    <option>Mario Rossi</option>
+                                    <option>Giuseppe Verdi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="qqqaq" class="col-sm-2 col-form-label">Cliente</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="qqqaq">
+                                    <option>Andrea Colombo</option>
+                                    <option>Filippo Bianchi</option>
+                                    <option>Maria Tresa Ferrari</option>
+                                    <option>Antonio Esposito</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="qqqaqs" class="col-sm-2 col-form-label">Stato</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="qqqaqs">
+                                    <option>Bozza</option>
+                                    <option>Sottoposto al cliente</option>
+                                    <option>Approvato</option>
+                                    <option>Rifiutato</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+
+                <div class="card">
+                    <h4 class="card-header">
+                        Capitolati
+                    </h4>
+                    <div class="card-body" id="coso">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <select class="form-control" title="Elemento">
+                                    <option>Copertura tetto</option>
+                                    <option>Piastrellatura pavimenti</option>
+                                    <option>Intonacatura pareti interne</option>
+                                    <option>Intonacatura pareti esterne</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="number" class="form-control" title="Quantità" value="10">
+                                    <div class="input-group-addon">m²</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <input type="text" readonly class="form-control-plaintext" title="Prezzo unitario" value="18&thinsp;€/m²">
+                            </div>
+                            <div class="col-sm-1">
+                                <input type="text" readonly class="form-control-plaintext" title="Subtotale" value="180&thinsp;€">
+                            </div>
+                            <div class="col-sm-1">
+                                <button class="btn btn-danger">Elimina</button>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <select class="form-control" title="Elemento">
+                                    <option>Copertura tetto</option>
+                                    <option selected>Piastrellatura pavimenti</option>
+                                    <option>Intonacatura pareti interne</option>
+                                    <option>Intonacatura pareti esterne</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="number" class="form-control" title="Quantità" value="30">
+                                    <div class="input-group-addon">m²</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <input type="text" readonly class="form-control-plaintext" title="Prezzo unitario" value="20&thinsp;€/m²">
+                            </div>
+                            <div class="col-sm-1">
+                                <input type="text" readonly class="form-control-plaintext" title="Subtotale" value="600&thinsp;€">
+                            </div>
+                            <div class="col-sm-1">
+                                <button class="btn btn-danger">Elimina</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-success" onclick="$('#coso .row').first().clone().appendTo('#coso');">Aggiungi capitolato</a>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Salva preventivo" class="btn btn-primary">
+    </form>
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script type="application/javascript">
+    $(function () {
+        $('#coso').on('click', '.btn-danger', function () {
+            $(this).parents('.row').first().remove();
+        });
+    });
+</script>
+</body>
+</html>

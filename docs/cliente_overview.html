@@ -19,13 +19,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="cantieri.html">Cantieri</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="preventivi_admin.html">Preventivi</a>
             </li>
         </ul>
@@ -36,10 +36,92 @@
     </div>
 </nav>
 
-<main role="main" class="container">
-    <h1>Da fare</h1>
-</main>
+<main role="main" class="container-fluid">
+    <h1>
+        Andrea Colombo
+        <small class="text-muted">cliente</small>
+    </h1>
 
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+               aria-selected="true">Preventivi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+               aria-selected="false">Cantieri</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Indirizzo</th>
+                    <th>Architetto</th>
+                    <th>Valore totale</th>
+                    <th>Stato</th>
+                    <th>Azioni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Viale dei Giardini 32, Monopoli</td>
+                    <td><a href="architetto_overview.html">Mario Rossi</a></td>
+                    <td>3.000,00&thinsp;€</td>
+                    <td>Bozza</td>
+                    <td>
+                        <a href="preventivo_edit.html" class="btn btn-primary btn-sm">Modifica</a>
+                        <a href="preventivo_edit.html" class="btn btn-secondary btn-sm">Duplica</a>
+                        <a href="#" class="btn btn-danger btn-sm">Elimina</a>
+                    </td>
+                </tr>
+                <tr class="table-success">
+                    <td>Via Accademia 54, Monopoli</td>
+                    <td><a href="architetto_overview.html">Mario Rossi</a></td>
+                    <td>30.000,00&thinsp;€</td>
+                    <td>Approvato</td>
+                    <td>
+                        <a href="cantieri.html" class="btn btn-primary btn-sm">Avvia cantiere</a>
+                        <a href="preventivo_edit.html" class="btn btn-secondary btn-sm">Duplica</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Indirizzo e stato avanzamento</th>
+                    <th>Architetto</th>
+                    <th>Pagamenti</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-success">
+                    <td>
+                        Viale dei Giardini 32, Monopoli
+                        <br><em>cantiere attivo</em>
+                    </td>
+                    <td><a href="architetto_overview.html">Mario Rossi</a></td>
+                    <td>
+                        <div class="container row">
+                            <div class="col bg-success"><strong>3.000,00&thinsp;€</strong><br>1/4/2017</div>
+                            <div class="col bg-success"><strong>3.000,00&thinsp;€</strong><br>15/7/2017</div>
+                            <div class="col bg-warning"><strong>4.000,00&thinsp;€</strong><br>5/11/2017</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</main>
 
 
 <!-- Optional JavaScript -->
